@@ -1,4 +1,3 @@
-@Library('first-lib') _
 def label = "mypod-${UUID.randomUUID().toString()}"
 podTemplate(label: label, containers: [
     containerTemplate(name: 'docker', image: 'docker:dind', privileged: true),
