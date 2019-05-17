@@ -7,8 +7,7 @@ podTemplate(label: label, containers: [
     node(label) {
         stage('shellzzz') {
             container('helm'){
-                sh 'This is implicitzzZzzz'
-                sample "LibZZzzZZ"
+                sample "Implicitzzz LibZZzzZZ"
             }
         }
     }
