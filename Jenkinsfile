@@ -1,3 +1,4 @@
+@Library('first-lib') _
 def label = "mypod-${UUID.randomUUID().toString()}"
 podTemplate(label: label, containers: [
     containerTemplate(name: 'docker', image: 'docker:dind', privileged: true),
@@ -8,6 +9,7 @@ podTemplate(label: label, containers: [
             container('helm'){
                 sh 'echo hello world from Kubzzzzz'
                 sh 'kubectl get pods'
+                sample "LibZZzzZZ"
             }
         }
     }
